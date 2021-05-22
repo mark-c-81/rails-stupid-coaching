@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+<div class="container">
+	<h1>Ask your coach a question</h1>
+	<form action="/answer" method="GET">
+	  <input id="question_box" type="text" name="question" value="<%= params[:question] %>">
+	  <input id="button" type="submit" value="Ask!">
+	</form>
+</div>
+
+</body>
+</html>
+

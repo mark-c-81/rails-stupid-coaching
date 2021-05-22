@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Stupid Coaching</h1>
+
+		<h2><%= params[:question] %></h2>	
+
+		<% if params[:question].downcase == "i am going to work now!" %>
+		<h3>ok ok ok</h3>
+		<% elsif params[:question].end_with?("?") %>
+		<h3>Silly question, get dressed and go to work!</h3>
+		<% else %>
+		<h3>I don't care, get dressed and go to work!</h3>
+		<% end %>
+		 
+		<%= link_to "Ask another question", ask_path %>
+
+	</div>
+
+</body>
+</html>
+
+
